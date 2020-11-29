@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon1.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrapstyle.css">
+    <link rel="stylesheet" href="css/userlogin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid nav-ray">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1A1B25;">
+            <div class="logo-nav"><img src="images/favicon1.png" alt="Stockify-Logo" style="height: 7vh;width: 7vh;"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+              <span class="navbar-toggler-icon" style="size: 20px;"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse menus" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://127.0.0.1:8050/" style="color: yellow; text-shadow: 2px -2px 2px grey;">Analysis<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a type="submit" class="nav-link" href="invest" style="color: yellow; text-shadow: 2px -2px 2px grey;">Invest<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: yellow; text-shadow: 2px -2px 2px grey;">
+                      <%= empty %>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">My Profile</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="index">Sign-Out</a>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <section style="background-color: none;">
+      <h3>STATUS</h3>
+              <div class="outer">
+
+                <div class="inner_1">
+                  <h1>COUNTRY DATABASE</h1>
+                  <table class="t1">
+                    <tr >
+                      <th>COUNTRY</th>
+                      <th>GDP </th>
+                      <th>INFLATION RATE</th>
+                      <th>PER CAPITA INCOME</th>
+                      <th>GDP GROWTH RATE</th>
+                    </tr>
+                    
+                  </table>
+                </div>  
+                
+                <div class="inner_2">
+                  <h1>COMPANIES</h1>
+                  <table class="t2">
+                    <tr >
+                      <th>Company</th>
+                      <th>ORIGIN </th>
+                      <th>STOCK VALUE</th>
+                      <th>GROWTH PERCENT</th>
+                      
+                    </tr>
+                    
+                  </table>
+                </div> 
+                
+                
+                <div class="inner_3">
+                  <h1>INVESTMENTS</h1>
+                  <table class="t3">
+                    <tr >
+                      <th>COMPANY</th>
+                      <th>BUYING PRICE </th>
+                      <th>VOLUME</th>
+                      
+                    </tr>
+                    
+                  </table>
+                </div>   
+
+                <div class="inner_4">
+                  <h1>PHARMACEUTICAL</h1>
+                  <table class="t4">
+                    <tr >
+                      <th>COUNTRY</th>
+                      <th>EXPORT VALUE </th>
+                      <th>SHARRE GLOBALLY IN PER.</th>
+                      <th>TOP PERFORMER</th>
+                      <th>MARKET VALUE IN CR.</th>
+                    </tr>
+
+                    
+                  </table>
+                </div>
+              
+                <div class="inner_5">
+                  <h1>MANUFACTURING</h1>
+                  <table class="t5">
+                    <tr >
+                      <th>RANK</th>
+                      <th>COUNTRY </th>
+                      <th>MARKET VALUE</th>
+                      <th>GLOBAL PERCENT</th>
+                      
+                    </tr>
+
+                    
+                  </table>
+                </div>
+
+                <div class="inner_6">
+                  <h1>SERVICE</h1>
+                  <table class="t6">
+                    <tr >
+                      <th>RANK</th>
+                      <th>COUNTRY </th>
+                      <th>TOP PLAYER</th>
+                      
+                      
+                    </tr>
+
+                    
+                  </table>
+                </div>
+                
+                
+                
+
+            </div> 
+            
+
+            <footer>
+              <div class="footer-text" id="ftr-text">Designed with ❤️ by <span>Team Stockify</span></div>
+            </footer>
+                  
+                  
+                  <style>
+                    .table {
+                    width: 100%;
+                    }
+                    </style>       
+    
+  <script src="../js/data.js"> </script>
+</body>
+</html>
