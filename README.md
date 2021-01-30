@@ -1,4 +1,5 @@
-This is a GROUP PROJECT
+This is a GROUP PROJECT where I worked on backend 
+part. 
 
 install Python Program(Anaconda)
 open anaconda prompt
